@@ -1,0 +1,15 @@
+syntax = "proto3";
+package tfchain4.tfchain4;
+
+import "amino/amino.proto";
+import "gogoproto/gogo.proto";
+
+option go_package = "tfchain4/x/tfchain4/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (amino.name) = "tfchain4/x/tfchain4/Params";
+  option (gogoproto.equal) = true;
+
+  
+}
