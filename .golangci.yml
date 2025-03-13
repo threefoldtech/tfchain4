@@ -1,0 +1,14 @@
+run:
+  timeout: 5m
+
+linters:
+  enable:
+    - staticcheck
+  disable:
+    - errcheck
+
+issues:
+  exclude-rules:
+    - linters:
+        - staticcheck
+      text: "SA1..."  # This will exclude all SA1xxx messages, which is deprecated code
